@@ -2,14 +2,14 @@
   <div class="navbar-brand">
     <a
       class="navbar-item"
-      href="https://docs.microsoft.com/en-us/azure/active-directory/develop/"
+      href="https://umg.edu.gt"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="@/assets/azureAD.png" />
+      <img src="@/assets/umg.png" />
     </a>
     <div class="navbar-item nav-home">
-      <span class="tour">INTRO TO AZURE AD</span>
+      <span class="tour">Seguridad de Redes TCP/IP - Grupo 2</span>
     </div>
     <button
       class="link navbar-burger burger"

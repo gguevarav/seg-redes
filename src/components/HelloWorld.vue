@@ -1,25 +1,29 @@
 <template>
   <div class="content-container">
     <div class="section content-title-group">
-      <h2 class="title">Welcome to the Azure AD + Storage app with Vue.js</h2>
+      <h2 class="title">
+        Proyecto del Grupo No.2 del curso de Seguridad de redes TCP/IP
+      </h2>
+      <div>
+        <h3>Integrantes del grupo:</h3>
+        <ul>
+          <li>Gemis Daniel Guevara Villeda - 1493-13-2950</li>
+          <li>raul</li>
+          <li>roberto</li>
+        </ul>
+      </div>
     </div>
     <div v-if="account">
-      <div class="level">
-        <div class="level-item title">
-          You are logged in as {{ account.name }}
-        </div>
-      </div>
-      <div class="level">
-        <div class="level-item">
-          <ul>
-            <li v-for="container in containers" :key="container.id">
-              {{ container.name }}
-            </li>
-          </ul>
-        </div>
+      <img
+        src="@/assets/diagramaproyecto.png"
+        alt="Diagrama de Red - Grupo 2"
+      />
+    </div>
+    <div class="level" v-else>
+      <div class="level-item sub-title">
+        Inicie sesión para ver la información privada.
       </div>
     </div>
-    <div v-else>You need to authenticate to access your SQL data</div>
   </div>
 </template>
 

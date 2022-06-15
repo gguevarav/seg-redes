@@ -3,6 +3,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
+          <div v-if="account">{{ account.name }} |</div>
           <a
             v-if="!account"
             @click="SignIn"
@@ -13,11 +14,9 @@
             <i class="fas fa-sign-in-alt fa-2x" aria-hidden="false"></i>
           </a>
           <a v-else @click="SignOut" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-sign-out-alt fa-2x" aria-hidden="false"
-              >Cerrar Sesión</i
-            >
+            | Cerrar Sesión
+            <i class="fas fa-sign-out-alt fa-2x" aria-hidden="false"></i>
           </a>
-          <div v-if="account">{{ account.name }}</div>
         </div>
       </div>
     </div>
@@ -32,9 +31,6 @@ export default {
   data() {
     return {
       account: undefined,
-      github: "https://github.com/cmatskas",
-      twitter: "https://twitter.com/christosmatskas",
-      signin: "https://microsoft.com",
     };
   },
   async created() {

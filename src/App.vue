@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <HeaderBar />
-    <img alt="Vue logo" src="@/assets/logo.png" />
     <HelloWorld />
   </div>
 </template>
